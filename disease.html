@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About the Diseases</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: #f9f9f9;
+    }
+    header {
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start; /* align items at the top */
+      justify-content: space-between;
+      padding: 2rem 4rem;
+      gap: 2rem;
+    }
+    .nav {
+      flex: 0 0 200px; /* fixed width for nav column */
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      margin-top: 4rem;
+      background-color: #eee;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1.1rem;
+      padding: 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+    .nav a:hover {
+      background-color: #ddd;
+    }
+    .text {
+      flex: 2;
+      max-width: 70ch;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      color: #333;
+      margin-top: 2rem;
+    }
+    .image {
+      flex: 1;
+      display: flex;
+      flex-direction: column; /* stack image and caption */
+      align-items: center;
+    }
+    .image img {
+      width: 100%;        /* fills its flex column */
+      max-width: 500px;   /* hard cap so it never grows too large */
+      margin-top: 4rem;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #555;
+      text-align: center;
+      max-width: 90%;
+    }
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+      }
+      .container {
+        flex-direction: column;
+        padding: 2rem;
+      }
+      .nav {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+      }
+      .text, .image {
+        max-width: 100%;
+      }
+      .image img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Page title -->
+  <header>The Diseases</header>
+
+  <main class="container">
+    <!-- Navigation column -->
+    <nav class="nav">
+      <a href="index.html">About Ellen</a>
+      <a href="disease.html">The Diseases</a>
+      <a href="research.html">The Research</a>
+      <a href="https://www.washington.edu/giving/make-a-gift/?source_typ=3&source=TRM-152413">EMR Fund for University of Washington Research</a>
+    </nav>
+
+    <!-- Tribute text -->
+    <div class="text">
+      <p>In 2015, following an extended jaunt through Europe, we checked Ellen into the hospital for what was presumably dehydration. A few days later, she was diagnosed with Multiple Myeloma (MM), a cancer of plasma cells. It is incurable but can be treated by a myriad of therapies. Inevitably, patients on any of these therapies become resistant, requiring a change to a different regimen. For some, clinical trials become part of the therapeutic regimen. Ellen volunteered for four clinical trials.</p>
+      <p>The last trial she was on, in 2019, used a therapy referred to as ‘CAR-T’. A few months following this trial, Ellen started to have difficulties with her balance. Ultimately, she was diagnosed with a form of Parkinsonism called Multiple System Atrophy (MSA). MSA is a rare but aggressive neurodegenerative disease. The standard-of-care diagnosis involves a clinical assessment of one’s coordination and mobility. The standard-of-care therapy, which was FDA approved in 1975, is the same approach applied to those with Parkinson’s Disease; dopamine replenishment with Carbidopa/Levodopa. Unfortunately, this therapy is far less effective for those with MSA.</p>
+      <p>Ellen died from MM. However, it was the MSA that robbed her of her quality of life. Given the limited medical understanding of MSA, her family has partnered with the University of Washington to investigate this poorly understood disease.</p>
+    </div>
+
+    <!-- Image column with caption -->
+    <div class="image">
+      <img src="images/El_photo_disease.jpg" alt="Ellen Moss Robinson tribute image" />
+      <div class="caption">MSA left Ellen unable to walk, sit up, stand straight, speak clearly, or roll over. Yet, she could ride a recumbent trike for miles. This image shows Ellen riding her trike in the fall of 2024. 
+</div>
+    </div>
+  </main>
+</body>
+</html>
